@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roney Hossain | AI, ML, NLP, MLOps & LLMOps Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&family=Satisfy&display=swap" rel="stylesheet" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-[#1b2432] text-white font-sans antialiased selection:bg-green-500 selection:text-white">
+
+  <!-- ==================== 1. NAVBAR ==================== -->
+  <header class="bg-[#1b2432]/95 backdrop-blur-md text-white sticky top-0 z-50 border-b border-gray-800/80">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Brand Logo -->
+      <a href="index.html" class="text-2xl md:text-3xl font-signature tracking-wider">
+        Roney <span class="text-orange-500">Hossain</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#home" class="nav-link text-green-500 hover:text-green-400 transition">Home</a>
+        <a href="#about" class="nav-link text-gray-300 hover:text-green-400 transition">About</a>
+        <a href="#resume" class="nav-link text-gray-300 hover:text-green-400 transition">Experience & Skills</a>
+        <a href="projects.html" class="nav-link text-gray-300 hover:text-green-400 transition">Projects</a>
+        <a href="#blog-preview" class="nav-link text-gray-300 hover:text-green-400 transition">Blog</a>
+        <a href="#contact" class="nav-link text-gray-300 hover:text-green-400 transition">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#161f2c] border-b border-gray-800 px-6 py-4 space-y-3 text-sm">
+      <a href="#home" class="block text-green-400 font-medium">Home</a>
+      <a href="#about" class="block text-gray-300 hover:text-green-400">About</a>
+      <a href="#resume" class="block text-gray-300 hover:text-green-400">Experience & Skills</a>
+      <a href="projects.html" class="nav-link text-gray-300 hover:text-green-400 transition">Projects</a>
+      <a href="Blog.html" class="block text-gray-300 hover:text-green-400">Blog</a>
+      <a href="#contact" class="block text-gray-300 hover:text-green-400">Contact</a>
+    </div>
+  </header>
+
+  <!-- ==================== 2. HERO SECTION ==================== -->
+<section id="home" class="relative bg-[#1b2432] min-h-[88vh] flex flex-col justify-between pt-12 overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center my-auto z-10 w-full">
+    <!-- Left Content -->
+    <div>
+      <div class="inline-block bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-mono px-3 py-1 rounded-full mb-4">
+        ● Available for AI / ML & MLOps Roles
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Roney Hossain</h1>
+      <h2 class="text-xl md:text-2xl font-medium mb-6 h-8">
+        I'm an <span id="typing-text" class="text-green-500 font-semibold border-r-2 border-green-500 pr-1">AI & ML Engineer</span>
+      </h2>
+      <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
+        Focused on building end-to-end Machine Learning and Deep Learning architectures, Natural Language Processing (NLP) solutions, and scalable MLOps &amp; LLMOps pipelines. I transform complex data and research models into reliable, production-ready AI systems.
+      </p>
+
+      <!-- Action Buttons & Social Icons -->
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="Assets/resume.pdf" download class="bg-green-500 hover:bg-green-600 text-white font-medium px-7 py-3 rounded-full transition shadow-lg shadow-green-500/25">
+          Download CV
+        </a>
+        <a href="https://github.com/" target="_blank" title="GitHub" class="social-icon">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.kaggle.com/" target="_blank" title="Kaggle" class="social-icon">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.825 23.85c-.3 0-.6-.075-.825-.3l-5.1-5.1-3.675 3.675c-.225.225-.525.3-.825.3s-.6-.075-.825-.3l-3.3-3.3c-.225-.225-.3-.525-.3-.825s.075-.6.3-.825l3.675-3.675-5.1-5.1c-.225-.225-.3-.525-.3-.825s.075-.6.3-.825l3.3-3.3c.225-.225.525-.3.825-.3s.6.075.825.3l5.1 5.1 3.675-3.675c.225-.225.525-.3.825-.3s.6.075.825.3l3.3 3.3c.225.225.3.525.3.825s-.075.6-.3.825l-5.1 5.1 5.1 5.1c.225.225.3.525.3.825s-.075.6-.3.825l-3.3 3.3c-.225.225-.525.3-.825.3z"/></svg>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" title="LinkedIn" class="social-icon">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="mailto:roney.hossain@example.com" title="Email" class="social-icon">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.071v-9.405l4.623 4.334zm6.377 1.957l4.981-4.639 4.019 4.321v5.753h-18v-5.753l4.019-4.321 4.981 4.639zm6.377-4.886l4.623-4.334v9.405l-4.623-5.071zm-12.754-.071l-5.723-5.358h17.446l-5.723 5.358-3-2.791-3 2.791z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Profile Avatar with proper wrapper -->
+    <div class="flex justify-center my-6 md:my-0">
+      <div class="relative">
+        <div class="w-72 h-72 md:w-80 md:h-80 rounded-full border-4 border-green-500 overflow-hidden shadow-2xl bg-[#131a24] flex items-center justify-center relative z-10">
+          <img src="images/profiles.png" onerror="this.src='images/profile-placeholder.svg'" alt="Roney Hossain" class="w-full h-full object-cover" />
+        </div>
+        <!-- Floating Badge 1 -->
+        <div class="absolute -top-3 -right-4 bg-[#161f2c] border border-green-500/50 text-xs font-mono px-3 py-1.5 rounded-lg shadow-lg z-20">
+          <span class="text-green-400">MLOps</span> • Docker &amp; MLflow
+        </div>
+        <!-- Floating Badge 2 -->
+        <div class="absolute -bottom-3 -left-4 bg-[#161f2c] border border-green-500/50 text-xs font-mono px-3 py-1.5 rounded-lg shadow-lg z-20">
+          <span class="text-orange-400">LLMOps</span> • RAG &amp; LangChain
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Tech Stack Bar -->
+  <div class="bg-[#232d3d] py-4 mt-12 border-t border-gray-700/50 w-full">
+    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-4 text-gray-300 text-xs md:text-sm font-mono">
+      <span class="hover:text-green-400 transition">Python</span>
+      <span class="hover:text-green-400 transition">PyTorch</span>
+      <span class="hover:text-green-400 transition">TensorFlow</span>
+      <span class="hover:text-green-400 transition">Scikit-Learn</span>
+      <span class="hover:text-green-400 transition">Hugging Face</span>
+      <span class="hover:text-green-400 transition">LangChain</span>
+      <span class="hover:text-green-400 transition">MLflow &amp; DVC</span>
+      <span class="hover:text-green-400 transition">Docker &amp; FastAPI</span>
+    </div>
+  </div>
+</section>
+
+  <!-- ==================== 3. ABOUT ME SECTION ==================== -->
+  <section id="about" class="bg-[#161f2c] text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Left Framed Image -->
+      <div class="relative flex justify-center">
+        <div class="w-72 h-80 md:w-80 md:h-96 border-2 border-green-500 absolute -bottom-4 left-6 md:left-12 hidden sm:block"></div>
+        <img src="images/profiles.png" onerror="this.src='images/profile-placeholder.svg'" alt="Roney Hossain" class="w-72 h-80 md:w-80 md:h-96 object-cover bg-[#1b2432] relative z-10 shadow-2xl rounded-sm" />
+      </div>
+
+      <!-- Right Bio & Personal Details -->
+      <div>
+        <div class="w-1 h-8 bg-green-500 mb-4"></div>
+        <h2 class="text-3xl font-bold mb-1">ABOUT <span class="text-green-500">ME</span></h2>
+        <p class="text-base font-signature text-gray-400 mb-6">Roney Hossain</p>
+
+        <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
+          I am an AI &amp; Machine Learning practitioner currently completing my B.Sc. in Computer Science and Engineering at Bangladesh University. My core focus spans Machine Learning, Deep Learning, and Natural Language Processing (NLP)—developing high-precision predictive ensembles, fine-tuning Transformer models, and conducting empirical AI research.
+        </p>
+        <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-8">
+          Beyond training models in notebooks, I specialize in <strong class="text-green-400 font-medium">MLOps and LLMOps</strong>. I build reproducible pipelines using DVC, track experiments with MLflow, orchestrate Retrieval-Augmented Generation (RAG) workflows with LangChain, and deploy containerized microservices with Docker and FastAPI.
+        </p>
+
+        <!-- Personal Info Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 text-sm text-gray-300 mb-8 border-t border-b border-gray-800 py-5">
+          <div><span class="font-semibold text-white">Location:</span> Dhaka, BD</div>
+          <div><span class="font-semibold text-white">Nationality:</span> Bengali / Bangladesh</div>
+          <div><span class="font-semibold text-white">Study:</span> Bangladesh University</div>
+          <div><span class="font-semibold text-white">Age:</span> 26</div>
+          <div class="sm:col-span-2"><span class="font-semibold text-white">Focus Areas:</span> ML, Deep Learning, NLP, MLOps &amp; LLMOps</div>
+        </div>
+
+        <!-- Contact Social Row -->
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">— CONNECT WITH ME</p>
+          <div class="flex space-x-4 text-sm font-mono">
+            <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-green-400 transition">GitHub</a>
+            <span>•</span>
+            <a href="https://linkedin.com/" target="_blank" class="text-gray-400 hover:text-green-400 transition">LinkedIn</a>
+            <span>•</span>
+            <a href="https://huggingface.co/" target="_blank" class="text-gray-400 hover:text-green-400 transition">HuggingFace</a>
+            <span>•</span>
+            <a href="https://kaggle.com/" target="_blank" class="text-gray-400 hover:text-green-400 transition">Kaggle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. EDUCATION, EXPERIENCE & SKILLS ==================== -->
+  <section id="resume" class="bg-[#1b2432] text-white py-20 px-6">
+    <div class="max-w-5xl mx-auto space-y-16">
+
+      <!-- EDUCATION -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-800 pb-12">
+        <div>
+          <h3 class="text-green-500 font-bold tracking-wider uppercase border-b-2 border-green-500 inline-block pb-1">
+            EDUCATION
+          </h3>
+        </div>
+        <div class="md:col-span-3 space-y-8">
+          <div>
+            <h4 class="text-lg font-bold">Future Goal: Master's in Artificial Intelligence</h4>
+            <p class="text-xs text-green-400 font-mono mb-2">Target Intake • 2028 (In sha Allah)</p>
+            <p class="text-sm text-gray-300">
+              Planning to pursue an advanced research degree abroad specializing in trustworthy AI, Large Language Models, and scalable machine learning systems.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold">CSE | B.Sc. in Computer Science and Engineering</h4>
+            <p class="text-xs text-gray-400 italic mb-2">Bangladesh University • 2023 - 2027</p>
+            <p class="text-sm text-gray-300">
+              Currently completing my undergraduate degree in CSE with a strong specialization in Artificial Intelligence, Machine Learning, Deep Learning, and Data Science research.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold">HSC | Higher Secondary Certificate</h4>
+            <p class="text-xs text-gray-400 italic mb-2">Mohammadpur Kendriya College (MKC) • 2017 - 2019</p>
+            <p class="text-sm text-gray-300">
+              Completed my HSC from MKC, where my programming journey began and I built a solid foundation in mathematics, algorithms, and problem-solving.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE & RESEARCH -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-800 pb-12">
+        <div>
+          <h3 class="text-green-500 font-bold tracking-wider uppercase border-b-2 border-green-500 inline-block pb-1">
+            EXPERIENCE
+          </h3>
+        </div>
+        <div class="md:col-span-3 space-y-8">
+          <div>
+            <h4 class="text-lg font-bold">Undergraduate AI &amp; Machine Learning Researcher</h4>
+            <p class="text-xs text-gray-400 italic mb-2">Academic &amp; Independent Research • 2025 - Present</p>
+            <p class="text-sm text-gray-300">
+              Investigating tabular foundation models, hybrid ensemble classifiers (XGBoost, LightGBM, Random Forest), probability calibration under distribution shift, and severe class imbalance handling.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold">MLOps &amp; LLMOps Engineer (Project-Based)</h4>
+            <p class="text-xs text-gray-400 italic mb-2">End-to-End AI Systems • 2025 - Present</p>
+            <p class="text-sm text-gray-300">
+              Designing automated ML pipelines using DVC and MLflow, containerizing inference APIs with Docker and FastAPI, and building production RAG applications with LangChain and vector databases.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-green-500 font-bold tracking-wider uppercase border-b-2 border-green-500 inline-block pb-1">
+            SKILLS
+          </h3>
+        </div>
+        <div class="md:col-span-3">
+          <p class="text-sm text-gray-300 mb-6">
+            Core technical stack across Machine Learning, Deep Learning, NLP, and production MLOps/LLMOps workflows:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Left Column: ML, DL & NLP -->
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-green-400 mb-4">Machine Learning, DL &amp; NLP</h4>
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>Python, Scikit-Learn, XGBoost, LightGBM</span><span>92%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 92%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>Deep Learning (PyTorch, TensorFlow, Keras)</span><span>85%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 85%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>NLP &amp; Transformers (Hugging Face, BERT, Fine-Tuning)</span><span>88%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 88%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>Data Analysis (Pandas, NumPy, Matplotlib, Seaborn)</span><span>90%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 90%"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: MLOps & LLMOps -->
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-green-400 mb-4">MLOps, LLMOps &amp; Deployment</h4>
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>LLMOps (LangChain, RAG, FAISS/ChromaDB, Prompt Eng.)</span><span>86%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 86%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>MLOps (MLflow, DVC, Docker, GitHub Actions CI/CD)</span><span>84%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 84%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>Model Serving &amp; UI (FastAPI, Streamlit, Gradio)</span><span>88%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 88%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-xs mb-1"><span>Web &amp; Version Control (Git, Linux, Tailwind, JS)</span><span>85%</span></div>
+                  <div class="w-full bg-gray-700 h-2.5 rounded-full"><div class="bg-green-500 h-2.5 rounded-full" style="width: 85%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 5. PROJECTS SECTION ==================== -->
+  <section id="projects" class="bg-[#161f2c] text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold">Check out some of my <span class="text-green-500">AI &amp; ML Work</span></h2>
+        <p class="text-gray-400 text-sm mt-2">Interactive showcase of MLOps pipelines, LLMOps RAG systems, Deep Learning &amp; NLP projects</p>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <button onclick="filterProjects('all')" class="filter-btn active-filter px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition" data-filter="all">All Projects</button>
+        <button onclick="filterProjects('mlops')" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition" data-filter="mlops">MLOps</button>
+        <button onclick="filterProjects('llmops')" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition" data-filter="llmops">LLMOps &amp; NLP</button>
+        <button onclick="filterProjects('mldl')" class="filter-btn px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition" data-filter="mldl">ML &amp; Deep Learning</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-grid">
+
+        <!-- Project 1: MLOps -->
+        <div class="project-card bg-[#1b2432] rounded-xl overflow-hidden border border-gray-800 hover:border-green-500/60 transition shadow-lg flex flex-col justify-between" data-category="mlops">
+          <div>
+            <!-- Live Architecture Visual Header -->
+            <div class="w-full h-48 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] p-5 flex flex-col justify-between border-b border-gray-800 font-mono">
+              <div class="flex justify-between items-center text-xs">
+                <span class="bg-green-500/20 text-green-400 border border-green-500/30 px-2.5 py-0.5 rounded-full">● CI/CD Pipeline Live</span>
+                <span class="text-gray-400">Latency: 28ms</span>
+              </div>
+              <div class="flex items-center justify-between text-center gap-1 my-auto">
+                <div class="bg-[#161f2c] border border-gray-700 px-2.5 py-2 rounded text-xs text-gray-300">Data/DVC</div>
+                <span class="text-green-500 font-bold">→</span>
+                <div class="bg-[#161f2c] border border-green-500/50 px-2.5 py-2 rounded text-xs text-green-400">MLflow</div>
+                <span class="text-green-500 font-bold">→</span>
+                <div class="bg-[#161f2c] border border-gray-700 px-2.5 py-2 rounded text-xs text-blue-400">Docker</div>
+                <span class="text-green-500 font-bold">→</span>
+                <div class="bg-green-500/20 border border-green-500 px-2.5 py-2 rounded text-xs text-white">FastAPI</div>
+              </div>
+              <div class="text-[11px] text-gray-500">registry_status: production_v2.4_verified</div>
+            </div>
+
+            <div class="p-6">
+              <span class="text-xs font-semibold text-green-400 uppercase tracking-wider">MLOps &amp; Deployment</span>
+              <h3 class="text-xl font-bold mt-1 mb-2">End-to-End Automated MLOps Pipeline</h3>
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                Production ML pipeline featuring automated data versioning with DVC, experiment tracking &amp; model registry in MLflow, Docker containerization, and FastAPI serving via GitHub Actions CI/CD.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">MLflow</span>
+                <span class="tech-tag">DVC</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">FastAPI</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 flex gap-4 text-sm font-medium">
+            <button onclick="openProjectModal('mlops')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition cursor-pointer">
+              View Landing Page →
+            </button>
+            <a href="https://github.com/" target="_blank" class="text-gray-300 hover:text-white flex items-center">GitHub Code ↗</a>
+          </div>
+        </div>
+
+        <!-- Project 2: LLMOps & RAG -->
+        <div class="project-card bg-[#1b2432] rounded-xl overflow-hidden border border-gray-800 hover:border-green-500/60 transition shadow-lg flex flex-col justify-between" data-category="llmops">
+          <div>
+            <div class="w-full h-48 bg-gradient-to-br from-[#0f172a] via-[#1a2436] to-[#0f172a] p-5 flex flex-col justify-between border-b border-gray-800 font-mono text-xs">
+              <div class="flex justify-between items-center">
+                <span class="text-purple-400 bg-purple-500/10 border border-purple-500/30 px-2.5 py-0.5 rounded-full">RAG Engine v1.2</span>
+                <span class="text-gray-400">Vector DB: Chroma</span>
+              </div>
+              <div class="space-y-2 my-auto bg-[#131b26] p-3 rounded-lg border border-gray-800">
+                <div class="text-gray-400"><span class="text-green-400">Query:</span> Analyze document compliance &amp; metrics...</div>
+                <div class="text-gray-200"><span class="text-purple-400">LLM:</span> Retrieved top-4 chunks (score &gt; 0.89). Generating grounded answer...</div>
+              </div>
+              <div class="flex justify-between text-[11px] text-gray-500">
+                <span>Backbone: Llama-3 / HF</span>
+                <span>Faithfulness: 94.2%</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <span class="text-xs font-semibold text-green-400 uppercase tracking-wider">LLMOps &amp; Generative AI</span>
+              <h3 class="text-xl font-bold mt-1 mb-2">Enterprise RAG Assistant &amp; LLMOps System</h3>
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                Retrieval-Augmented Generation system built with LangChain and Hugging Face embeddings, featuring semantic vector search, prompt evaluation, and hallucination monitoring.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">Hugging Face</span>
+                <span class="tech-tag">ChromaDB</span>
+                <span class="tech-tag">Streamlit</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 flex gap-4 text-sm font-medium">
+            <button onclick="openProjectModal('llmops')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition cursor-pointer">
+              View Landing Page →
+            </button>
+            <a href="https://github.com/" target="_blank" class="text-gray-300 hover:text-white flex items-center">GitHub Code ↗</a>
+          </div>
+        </div>
+
+        <!-- Project 3: Machine Learning Research -->
+        <div class="project-card bg-[#1b2432] rounded-xl overflow-hidden border border-gray-800 hover:border-green-500/60 transition shadow-lg flex flex-col justify-between" data-category="mldl">
+          <div>
+            <div class="w-full h-48 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] p-5 flex flex-col justify-between border-b border-gray-800 font-mono text-xs">
+              <div class="flex justify-between items-center">
+                <span class="text-blue-400 bg-blue-500/10 border border-blue-500/30 px-2.5 py-0.5 rounded-full">10-Fold Stratified CV</span>
+                <span class="text-green-400 font-bold">ROC-AUC: 0.964</span>
+              </div>
+              <div class="space-y-2 my-auto">
+                <div>
+                  <div class="flex justify-between text-[11px] mb-1"><span>Hybrid Voting Ensemble</span><span class="text-green-400">96.4%</span></div>
+                  <div class="w-full bg-gray-800 h-2 rounded"><div class="bg-green-500 h-2 rounded" style="width: 96%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-[11px] mb-1"><span>LightGBM + Calibration</span><span class="text-blue-400">94.8%</span></div>
+                  <div class="w-full bg-gray-800 h-2 rounded"><div class="bg-blue-500 h-2 rounded" style="width: 94%"></div></div>
+                </div>
+                <div>
+                  <div class="flex justify-between text-[11px] mb-1"><span>Random Forest + NGO</span><span class="text-gray-400">93.5%</span></div>
+                  <div class="w-full bg-gray-800 h-2 rounded"><div class="bg-emerald-600 h-2 rounded" style="width: 93%"></div></div>
+                </div>
+              </div>
+              <div class="text-[11px] text-gray-500">Expected Calibration Error (ECE): 0.018</div>
+            </div>
+
+            <div class="p-6">
+              <span class="text-xs font-semibold text-green-400 uppercase tracking-wider">Machine Learning &amp; Research</span>
+              <h3 class="text-xl font-bold mt-1 mb-2">Imbalanced Fraud &amp; Disease Classification Pipeline</h3>
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                High-reliability ensemble combining Random Forest, XGBoost, and LightGBM with probability calibration, metaheuristic optimization, and 10-fold Stratified cross-validation.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">XGBoost</span>
+                <span class="tech-tag">LightGBM</span>
+                <span class="tech-tag">Calibration</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 flex gap-4 text-sm font-medium">
+            <button onclick="openProjectModal('mlresearch')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition cursor-pointer">
+              View Landing Page →
+            </button>
+            <a href="https://github.com/" target="_blank" class="text-gray-300 hover:text-white flex items-center">GitHub Code ↗</a>
+          </div>
+        </div>
+
+        <!-- Project 4: Deep Learning & NLP -->
+        <div class="project-card bg-[#1b2432] rounded-xl overflow-hidden border border-gray-800 hover:border-green-500/60 transition shadow-lg flex flex-col justify-between" data-category="llmops mldl">
+          <div>
+            <div class="w-full h-48 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] p-5 flex flex-col justify-between border-b border-gray-800 font-mono text-xs">
+              <div class="flex justify-between items-center">
+                <span class="text-orange-400 bg-orange-500/10 border border-orange-500/30 px-2.5 py-0.5 rounded-full">PyTorch Fine-Tuning</span>
+                <span class="text-gray-400">Macro F1: 0.931</span>
+              </div>
+              <div class="my-auto bg-[#131b26] p-3 rounded-lg border border-gray-800 space-y-1.5">
+                <div class="text-gray-400 text-[11px]">Tokens: <span class="text-green-400">[CLS]</span> neural network inference is fast <span class="text-green-400">[SEP]</span></div>
+                <div class="flex items-center gap-2 text-[11px]">
+                  <span class="text-gray-300">Prediction:</span>
+                  <span class="bg-green-500/20 text-green-400 px-2 py-0.5 rounded">Positive (98.4%)</span>
+                  <span class="bg-gray-800 text-gray-500 px-2 py-0.5 rounded">Neutral (1.2%)</span>
+                </div>
+              </div>
+              <div class="text-[11px] text-gray-500">Model: RoBERTa-base | Gradio Web App</div>
+            </div>
+
+            <div class="p-6">
+              <span class="text-xs font-semibold text-green-400 uppercase tracking-wider">Deep Learning &amp; NLP</span>
+              <h3 class="text-xl font-bold mt-1 mb-2">Transformer Fine-Tuning for Multi-Class NLP</h3>
+              <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                Fine-tuned pretrained Transformer models in PyTorch and Hugging Face for contextual sentiment and intent classification, deployed with a live Gradio interface.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Transformers</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Gradio</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 flex gap-4 text-sm font-medium">
+            <button onclick="openProjectModal('dl_nlp')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition cursor-pointer">
+              View Landing Page →
+            </button>
+            <a href="https://github.com/" target="_blank" class="text-gray-300 hover:text-white flex items-center">GitHub Code ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. BLOG PREVIEW SECTION ==================== -->
+  <section id="blog-preview" class="bg-[#1b2432] text-white py-20 px-6 border-t border-gray-800/60">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+        <div>
+          <h2 class="text-3xl font-bold">Latest <span class="text-green-500">AI &amp; MLOps Articles</span></h2>
+          <p class="text-gray-400 text-sm mt-1">Technical guides on MLOps pipelines, LLM fine-tuning, and ML research</p>
+        </div>
+        <a href="Blog.html" class="mt-4 md:mt-0 border border-green-500 text-green-400 hover:bg-green-500 hover:text-white text-sm font-medium px-6 py-2.5 rounded-full transition">
+          View All Articles →
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Blog Card 1 -->
+        <article class="bg-[#161f2c] border border-gray-800 rounded-xl p-6 hover:border-green-500/50 transition flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-green-400">MLOps • 6 min read</span>
+            <h3 class="text-lg font-bold mt-2 mb-3">Structuring Reproducible ML Pipelines with DVC &amp; MLflow</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              How to move away from messy Jupyter notebooks to modular, version-controlled machine learning pipelines ready for CI/CD deployment.
+            </p>
+          </div>
+          <a href="Blog.html" class="text-green-400 text-sm font-medium hover:underline">Read Full Article →</a>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="bg-[#161f2c] border border-gray-800 rounded-xl p-6 hover:border-green-500/50 transition flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-purple-400">LLMOps &amp; RAG • 8 min read</span>
+            <h3 class="text-lg font-bold mt-2 mb-3">Reducing Hallucinations in Production RAG Systems</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              Practical strategies for chunking, hybrid retrieval, re-ranking, and evaluating faithfulness in LangChain and Hugging Face workflows.
+            </p>
+          </div>
+          <a href="Blog.html" class="text-green-400 text-sm font-medium hover:underline">Read Full Article →</a>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="bg-[#161f2c] border border-gray-800 rounded-xl p-6 hover:border-green-500/50 transition flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-blue-400">ML Research • 7 min read</span>
+            <h3 class="text-lg font-bold mt-2 mb-3">Why Confidence Calibration Matters in Imbalanced Classification</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              Exploring Expected Calibration Error (ECE), Brier Score, and post-hoc calibration techniques for gradient boosted decision trees.
+            </p>
+          </div>
+          <a href="Blog.html" class="text-green-400 text-sm font-medium hover:underline">Read Full Article →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. CONTACT SECTION ==================== -->
+  <section id="contact" class="bg-[#161f2c] text-white py-20 px-6 border-t border-gray-800">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Left Contact Info -->
+      <div>
+        <h2 class="text-3xl font-bold mb-2">GET IN <span class="text-green-500">TOUCH</span></h2>
+        <p class="text-gray-400 text-sm mb-8">
+          Interested in collaborating on Machine Learning research, MLOps/LLMOps engineering, or AI development? Feel free to reach out!
+        </p>
+
+        <div class="space-y-5 text-sm">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-green-500/10 border border-green-500/40 flex items-center justify-center text-green-400 font-bold">📍</div>
+            <div>
+              <p class="text-gray-400 text-xs">Location</p>
+              <p class="font-medium">Dhaka, Bangladesh</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-green-500/10 border border-green-500/40 flex items-center justify-center text-green-400 font-bold">✉️</div>
+            <div>
+              <p class="text-gray-400 text-xs">Email</p>
+              <p class="font-medium">roney.hossain@example.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full bg-green-500/10 border border-green-500/40 flex items-center justify-center text-green-400 font-bold">🎓</div>
+            <div>
+              <p class="text-gray-400 text-xs">Institution</p>
+              <p class="font-medium">CSE, Bangladesh University</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Contact Form -->
+      <form id="contact-form" class="bg-[#1b2432] p-6 md:p-8 rounded-xl border border-gray-800 space-y-4">
+        <div>
+          <label class="block text-xs text-gray-400 uppercase mb-1">Your Name</label>
+          <input type="text" required placeholder="Enter your name" class="w-full bg-[#131a24] border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-green-500" />
+        </div>
+        <div>
+          <label class="block text-xs text-gray-400 uppercase mb-1">Your Email</label>
+          <input type="email" required placeholder="Enter your email" class="w-full bg-[#131a24] border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-green-500" />
+        </div>
+        <div>
+          <label class="block text-xs text-gray-400 uppercase mb-1">Subject</label>
+          <input type="text" required placeholder="MLOps / NLP Project / Research Collaboration" class="w-full bg-[#131a24] border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-green-500" />
+        </div>
+        <div>
+          <label class="block text-xs text-gray-400 uppercase mb-1">Message</label>
+          <textarea rows="4" required placeholder="Write your message..." class="w-full bg-[#131a24] border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-green-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg transition shadow-lg shadow-green-500/20">
+          Send Message
+        </button>
+        <p id="form-feedback" class="text-xs text-green-400 text-center hidden mt-2">Thank you! Your message has been sent successfully.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="bg-[#121822] text-gray-400 text-xs py-8 px-6 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>© 2026 <span class="text-white font-semibold">Roney Hossain</span>. Built for AI, ML, NLP, MLOps &amp; LLMOps.</p>
+      <div class="flex space-x-6">
+        <a href="#home" class="hover:text-green-400">Home</a>
+        <a href="#projects" class="hover:text-green-400">Projects</a>
+        <a href="Blog.html" class="hover:text-green-400">Blog</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 9. DYNAMIC PROJECT LANDING PAGE MODAL ==================== -->
+  <div id="project-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div class="bg-[#1b2432] border border-gray-700 rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 relative shadow-2xl">
+      <button onclick="closeProjectModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 w-9 h-9 rounded-full flex items-center justify-center font-bold">
+        ✕
+      </button>
+      <span id="modal-badge" class="text-xs font-semibold text-green-400 uppercase tracking-wider">Category</span>
+      <h3 id="modal-title" class="text-2xl md:text-3xl font-bold mt-1 mb-4">Project Title</h3>
+      <p id="modal-desc" class="text-gray-300 text-sm md:text-base leading-relaxed mb-6"></p>
+
+      <!-- Key Metrics Box -->
+      <div class="grid grid-cols-3 gap-4 mb-6 bg-[#131a24] p-4 rounded-xl border border-gray-800 text-center">
+        <div>
+          <div id="modal-m1-val" class="text-xl font-bold text-green-400">96.4%</div>
+          <div id="modal-m1-lbl" class="text-xs text-gray-400 mt-1">Primary Metric</div>
+        </div>
+        <div>
+          <div id="modal-m2-val" class="text-xl font-bold text-green-400">28ms</div>
+          <div id="modal-m2-lbl" class="text-xs text-gray-400 mt-1">Inference Speed</div>
+        </div>
+        <div>
+          <div id="modal-m3-val" class="text-xl font-bold text-green-400">Docker + CI/CD</div>
+          <div id="modal-m3-lbl" class="text-xs text-gray-400 mt-1">Deployment</div>
+        </div>
+      </div>
+
+      <!-- Architecture / Workflow Steps -->
+      <h4 class="text-sm font-bold uppercase tracking-wider text-gray-200 mb-3">System Architecture &amp; Workflow</h4>
+      <ul id="modal-steps" class="list-disc list-inside text-gray-300 text-sm space-y-2 mb-6"></ul>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap gap-4 pt-4 border-t border-gray-800">
+        <a href="https://github.com/" target="_blank" class="bg-green-500 hover:bg-green-600 text-white text-sm font-medium px-6 py-2.5 rounded-lg transition">
+          Explore GitHub Repository ↗
+        </a>
+        <button onclick="closeProjectModal()" class="border border-gray-600 hover:border-gray-400 text-gray-300 text-sm font-medium px-6 py-2.5 rounded-lg transition">
+          Close Preview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
